@@ -131,3 +131,22 @@ The trained Random Forest model is saved at:
 ```
 models/churn_rf_model.pkl
 ```
+
+### 🔹 What is ROC?
+- ROC = *Receiver Operating Characteristic*  
+- It’s a curve that shows how well the model separates:  
+  - **Churners (1)** vs **Non-Churners (0)**  
+- X-axis → False Positive Rate (wrongly saying someone will churn)  
+- Y-axis → True Positive Rate (catching actual churners)  
+
+### 🔹 What is AUC?
+- AUC = *Area Under the ROC Curve*  
+- Score between **0 and 1**  
+  - **1.0** → Perfect model  
+  - **0.5** → Random guessing  
+  - **>0.8** → Very good model  
+
+### 🔹 Why it matters?
+- Accuracy can be misleading if classes are imbalanced.  
+- ROC-AUC tells us how well the model **truly separates churners vs non-churners**.  
+
