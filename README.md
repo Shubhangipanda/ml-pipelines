@@ -91,3 +91,43 @@ Here’s the simple math explained:
 ✅ In short:  
 We clean data → scale & encode → train logistic regression → predict churn probability → evaluate with metrics.
 
+3)
+## 📊 Random Forest Model Results  
+
+We trained a **Random Forest Classifier** to predict customer churn.  
+
+### 🔑 Key Metrics
+| Metric       | Score |
+|--------------|-------|
+| Accuracy     | **0.78** |
+| Precision    | **0.62** |
+| Recall       | **0.48** |
+| F1 Score     | **0.54** |
+| ROC-AUC      | *(to be added after calculation)* |
+
+---
+
+### ✅ What These Metrics Mean
+- **Accuracy (0.78)** → The model predicts churn correctly about 78% of the time.  
+- **Precision (0.62)** → Out of customers predicted as churners, 62% actually churned.  
+- **Recall (0.48)** → The model caught 48% of the actual churners.  
+- **F1 Score (0.54)** → Balance between precision and recall.  
+- **ROC-AUC** → Will tell us how well the model separates churn vs no churn.  
+
+---
+
+### 📌 Insights from Random Forest
+- **Non-churners (0 class)** are predicted much better than churners (1 class).  
+- Customers with:  
+  - **Short tenure**  
+  - **High monthly charges**  
+  - **Month-to-month contracts**  
+  are more likely to churn.  
+
+---
+
+### 💾 Model Artifact
+The trained Random Forest model is saved at:
+```
+models/churn_rf_model.pkl
+```
