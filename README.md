@@ -49,7 +49,7 @@ Here’s the simple math explained:
 
 ---
 
-### 🔹 2. Logistic Regression (The Model)
+### 🔹 2. Model 1:  Logistic Regression
 - **Linear Combination:**  
   Combine features with weights:  
   \[
@@ -91,8 +91,8 @@ Here’s the simple math explained:
 ✅ In short:  
 We clean data → scale & encode → train logistic regression → predict churn probability → evaluate with metrics.
 
-3)
-## 📊 Random Forest Model Results  
+
+## 📊 4. Model 2 : Random Forest Model Results  
 
 We trained a **Random Forest Classifier** to predict customer churn.  
 
@@ -148,5 +148,26 @@ models/churn_rf_model.pkl
 
 ### 🔹 Why it matters?
 - Accuracy can be misleading if classes are imbalanced.  
-- ROC-AUC tells us how well the model **truly separates churners vs non-churners**.  
+- ROC-AUC tells us how well the model **truly separates churners vs non-churners**.
+
+
+## 🚀 5. Model 3: XGBoost Classifier
+
+XGBoost is a powerful gradient boosting algorithm that works well on structured/tabular data.  
+It often performs better than Logistic Regression and Random Forest in classification problems like churn prediction.  
+
+### ✅ Steps:
+1. Train XGBoost model on training data.  
+2. Predict churn for test customers.  
+3. Evaluate using Accuracy, Precision, Recall, F1-score, and ROC-AUC.  
+4. Plot ROC Curve to visualize model performance.  
+
+### 📊 Results:
+| Metric              | Score |
+|----------------------|-------|
+| Accuracy             | 0.78  |
+| Precision (Churn=1)  | 0.61  |
+| Recall (Churn=1)     | 0.53  |
+| F1-score (Churn=1)   | 0.56  |
+| ROC-AUC              | 0.82  |
 
