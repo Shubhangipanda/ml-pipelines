@@ -103,7 +103,7 @@ We trained a **Random Forest Classifier** to predict customer churn.
 | Precision    | **0.62** |
 | Recall       | **0.48** |
 | F1 Score     | **0.54** |
-| ROC-AUC      | *(to be added after calculation)* |
+| ROC-AUC      | **0.82** |
 
 ---
 
@@ -170,4 +170,17 @@ It often performs better than Logistic Regression and Random Forest in classific
 | Recall (Churn=1)     | 0.53  |
 | F1-score (Churn=1)   | 0.56  |
 | ROC-AUC              | 0.82  |
+
+## 🔎 6. Model Comparison
+
+Here’s a side-by-side comparison of the three models we tried:
+
+| Model                | Accuracy | Precision (Churn=1) | Recall (Churn=1) | F1-score (Churn=1) |
+|-----------------------|----------|---------------------|------------------|--------------------|
+| Logistic Regression   | 0.78     | 0.62                | 0.48             | 0.54               |
+| Random Forest         | 0.78     | 0.62                | 0.48             | 0.54               | 
+| XGBoost               | 0.78     | 0.61                | 0.53             | 0.56               | 
+
+Thankyou for visiting! :) 
+
 
